@@ -1,0 +1,121 @@
+body {
+  background: #577a60;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 750px;
+  margin: 50px auto;
+  background: #ffffff6f;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.09);
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #032928;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.tabs button {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #765d6c;
+  background: #ffffff6f;
+  border-radius: 10px 10px 0 0;
+  outline: none;
+  margin-right: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background: #765d6c;
+  color: #f7f6f6f4;
+}
+
+.tab-content {
+  display: block;
+}
+
+.tab-content:not(:first-child) {
+  display: none;
+}
+
+form {
+  background: #f9f6f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: #2c1515;
+}
+
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #4c86cd;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+button[type='submit'],
+.tab-content button:not(.tab-btn) {
+  width: 100%;
+  padding: 15px;
+  margin-top: 8px;
+  font-weight: 700;
+  background: #283756;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.18s ease;
+}
+
+button[type='submit']:hover,
+.tab-content button:hover {
+  background: #bc7d71;
+}
+
+canvas {
+  background: #fff;
+  border-radius: 6px;
+  margin-top: 18px;
+}
+
+#userResult,
+#histogramDetail {
+  margin-top: 26px;
+  color: #222;
+}
+
+ul.probability-list {
+  padding: 0;
+  list-style: none;
+}
+
+ul.probability-list li {
+  margin-bottom: 5px;
+}
