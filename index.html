@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animal Emotion Recognition</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Animal Emotion Recognition</h1>
+    <div class="tabs">
+      <button class="active" onclick="activateTab('datasetTab', this)">Dataset Prediction</button>
+      <button onclick="activateTab('userTab', this)">User Input Prediction</button>
+    </div>
+    <div id="datasetTab" class="tab-content">
+      <h2>Dataset-wide Predictions</h2>
+      <button onclick="loadDataset()">Show Pie Chart</button>
+      <canvas id="datasetChart" width="600" height="300"></canvas>
+      <div id="histogramDetail"></div>
+    </div>
+    <div id="userTab" class="tab-content" style="display:none;">
+      <h2>User Input Prediction</h2>
+      <form id="emotionForm">
+        <label>Upload Audio (wav, mp3):
+          <input type="file" id="audioInput" accept=".wav,.mp3" required />
+        </label>
+        <label>Upload Image (jpg, jpeg, png):
+          <input type="file" id="imageInput" accept=".jpg,.jpeg,.png" required />
+        </label>
+        <button type="submit">Analyze Emotion</button>
+      </form>
+      <div id="userResult"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
