@@ -26,6 +26,9 @@ To ensure transparency, predictions are explained in **natural language** using 
 - **Interactive Visualization**: Real-time emotion distribution via Chart.js pie charts  
 - **Explainable AI (XAI)**: GPT-4 generates human-readable explanations for predictions  
 - **Real-time Inference**: Lightweight Flask REST API backend   
-- **Species Adaptability**: Extendable to new animals, sensors, or contexts  
+- **Species Adaptability**: Extendable to new animals, sensors, or contexts
+
+## Overall Architecture
+
 
 <img width="940" height="1200" alt="image" src="https://github.com/user-attachments/assets/be1ac63b-f92a-4b23-a634-6f0de6558c01" />
